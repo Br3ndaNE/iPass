@@ -1,0 +1,89 @@
+\hypertarget{classweatherstation}{}\doxysection{weatherstation Class Reference}
+\label{classweatherstation}\index{weatherstation@{weatherstation}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classweatherstation_af9d31febff4bcf0655ddc2ee36ac9eb1}\label{classweatherstation_af9d31febff4bcf0655ddc2ee36ac9eb1}} 
+{\bfseries weatherstation} (\mbox{\hyperlink{class_sensor_temp}{Sensor\+Temp}} \&temp, \mbox{\hyperlink{class_sensor_pressure}{Sensor\+Pressure}} \&press, \mbox{\hyperlink{class_sensor_humidity}{Sensor\+Humidity}} \&hum, \mbox{\hyperlink{classoled}{oled}} \&window)
+\item 
+void \mbox{\hyperlink{classweatherstation_a6d997a11b933fba83c5efd9044d60d15}{print}} ()
+\begin{DoxyCompactList}\small\item\em Weatherstation print. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classweatherstation_a182593416aac3ce8d36a5c14ba6214bb}{start}} ()
+\begin{DoxyCompactList}\small\item\em Weatherstation start. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classweatherstation_a357d7507b75384705008c813a6971e57}{test}} (int x)
+\begin{DoxyCompactList}\small\item\em Weatherstation test. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classweatherstation_a914e9d4072ab7ed74ca272602ae719b5}{get\+\_\+temp}} ()
+\begin{DoxyCompactList}\small\item\em Weatherstation get\+\_\+temp. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classweatherstation_aa8ef084b72999d240edbcc84f4620472}{get\+\_\+press}} ()
+\begin{DoxyCompactList}\small\item\em Weatherstation get\+\_\+press. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classweatherstation_a8fe6b90aada2b01c51c9b56230241d85}{get\+\_\+hum}} ()
+\begin{DoxyCompactList}\small\item\em Weatherstation get\+\_\+hum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classweatherstation_a8fe6b90aada2b01c51c9b56230241d85}\label{classweatherstation_a8fe6b90aada2b01c51c9b56230241d85}} 
+\index{weatherstation@{weatherstation}!get\_hum@{get\_hum}}
+\index{get\_hum@{get\_hum}!weatherstation@{weatherstation}}
+\doxysubsubsection{\texorpdfstring{get\_hum()}{get\_hum()}}
+{\footnotesize\ttfamily int weatherstation\+::get\+\_\+hum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Weatherstation get\+\_\+hum. 
+
+getter humidity \mbox{\Hypertarget{classweatherstation_aa8ef084b72999d240edbcc84f4620472}\label{classweatherstation_aa8ef084b72999d240edbcc84f4620472}} 
+\index{weatherstation@{weatherstation}!get\_press@{get\_press}}
+\index{get\_press@{get\_press}!weatherstation@{weatherstation}}
+\doxysubsubsection{\texorpdfstring{get\_press()}{get\_press()}}
+{\footnotesize\ttfamily int weatherstation\+::get\+\_\+press (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Weatherstation get\+\_\+press. 
+
+getter atmospheric pressure \mbox{\Hypertarget{classweatherstation_a914e9d4072ab7ed74ca272602ae719b5}\label{classweatherstation_a914e9d4072ab7ed74ca272602ae719b5}} 
+\index{weatherstation@{weatherstation}!get\_temp@{get\_temp}}
+\index{get\_temp@{get\_temp}!weatherstation@{weatherstation}}
+\doxysubsubsection{\texorpdfstring{get\_temp()}{get\_temp()}}
+{\footnotesize\ttfamily int weatherstation\+::get\+\_\+temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Weatherstation get\+\_\+temp. 
+
+getter tempature \mbox{\Hypertarget{classweatherstation_a6d997a11b933fba83c5efd9044d60d15}\label{classweatherstation_a6d997a11b933fba83c5efd9044d60d15}} 
+\index{weatherstation@{weatherstation}!print@{print}}
+\index{print@{print}!weatherstation@{weatherstation}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void weatherstation\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Weatherstation print. 
+
+This function gives the temp, press and hum to the print oled function. \mbox{\Hypertarget{classweatherstation_a182593416aac3ce8d36a5c14ba6214bb}\label{classweatherstation_a182593416aac3ce8d36a5c14ba6214bb}} 
+\index{weatherstation@{weatherstation}!start@{start}}
+\index{start@{start}!weatherstation@{weatherstation}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void weatherstation\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Weatherstation start. 
+
+This function calls the print function in a endless loop that will write the temp, press and hum to the oledscreen. \mbox{\Hypertarget{classweatherstation_a357d7507b75384705008c813a6971e57}\label{classweatherstation_a357d7507b75384705008c813a6971e57}} 
+\index{weatherstation@{weatherstation}!test@{test}}
+\index{test@{test}!weatherstation@{weatherstation}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily void weatherstation\+::test (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Weatherstation test. 
+
+Tests the given values of the \mbox{\hyperlink{class_b_m_e280}{BME280}}. Parameter x is how many times you want to test the function. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{weatherstation_8hpp}{weatherstation.\+hpp}}\item 
+weatherstation.\+cpp\end{DoxyCompactItemize}

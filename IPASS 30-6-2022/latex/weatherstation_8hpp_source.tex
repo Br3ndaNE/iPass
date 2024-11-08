@@ -1,0 +1,52 @@
+\hypertarget{weatherstation_8hpp_source}{}\doxysection{weatherstation.\+hpp}
+\mbox{\hyperlink{weatherstation_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by 31681 on 27-\/6-\/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef V1OOPC\_EXAMPLES\_WEATHERSTATION\_HPP}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define V1OOPC\_EXAMPLES\_WEATHERSTATION\_HPP}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_b_m_e280_8hpp}{BME280.hpp}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_sensor_temp_8hpp}{SensorTemp.hpp}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_sensor_pressure_8hpp}{SensorPressure.hpp}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_sensor_humidity_8hpp}{SensorHumidity.hpp}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}hwlib.hpp"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{oled_8hpp}{oled.hpp}}"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{classweatherstation}{weatherstation}}\{}
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21     \textcolor{keywordtype}{int} degrees, pressure, humidity;}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_sensor_temp}{SensorTemp}}\& temp;}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_sensor_pressure}{SensorPressure}}\& press;}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_sensor_humidity}{SensorHumidity}} \& hum;}
+\DoxyCodeLine{25     \mbox{\hyperlink{classoled}{oled}}\& window;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{classweatherstation}{weatherstation}}(\mbox{\hyperlink{class_sensor_temp}{SensorTemp}} \& temp, \mbox{\hyperlink{class_sensor_pressure}{SensorPressure}} \& press, \mbox{\hyperlink{class_sensor_humidity}{SensorHumidity}} \& hum, \mbox{\hyperlink{classoled}{oled}} \& window):}
+\DoxyCodeLine{29     degrees(temp.GetTemp()),}
+\DoxyCodeLine{30     pressure(press.GetPressure()),}
+\DoxyCodeLine{31     humidity(hum.GetHumidity()),}
+\DoxyCodeLine{32     temp(temp),}
+\DoxyCodeLine{33     press(press),}
+\DoxyCodeLine{34     hum(hum),}
+\DoxyCodeLine{35     window(window)\{\}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{classweatherstation_a6d997a11b933fba83c5efd9044d60d15}{print}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{classweatherstation_a182593416aac3ce8d36a5c14ba6214bb}{start}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{classweatherstation_a357d7507b75384705008c813a6971e57}{test}}(\textcolor{keywordtype}{int} x);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} \mbox{\hyperlink{classweatherstation_a914e9d4072ab7ed74ca272602ae719b5}{get\_temp}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{int} \mbox{\hyperlink{classweatherstation_aa8ef084b72999d240edbcc84f4620472}{get\_press}}();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{int} \mbox{\hyperlink{classweatherstation_a8fe6b90aada2b01c51c9b56230241d85}{get\_hum}}();}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//V1OOPC\_EXAMPLES\_WEATHERSTATION\_HPP}}
+
+\end{DoxyCode}
